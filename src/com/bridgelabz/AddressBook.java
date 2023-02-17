@@ -1,12 +1,52 @@
 package com.bridgelabz;
 
-public class AddressBook
+public class AddressBook extends Contact
 {
-    public static void main(String[] args) {
-        System.out.println("Welcome In Address Book System Program ");
-        System.out.print("Enter a Phone number: ");
-        AddressBookSystem address = new AddressBookSystem();//create object for addressbook class
-        address.setDetails();
-        address.printDetails();
+    String address, city, state;
+    int zip;
+    long phoneNo;
+    String Email;
+    String FirstName;
+    String lastName;
+
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setPhoneNo(long phoneNo) {
+        this.phoneNo = phoneNo;
+    }
+
+    public long getPhoneNo() {
+        return phoneNo;
+    }
+
+    public void setZip(int zip) {
+        this.zip = zip;
+    }
+
+    public int getZip() {
+        return zip;
     }
 }
